@@ -47,11 +47,35 @@ _.identity = function(value){
 _.typeOf = function (value){
 //CODE BELOW HERE
 
+if(value === null){
+  return 'null'
+} else if(typeof value === 'string'){
+   return 'string'
+} else if(number){
 
+} else if(object){
 
+} else if(function){
+
+} else if(undefined){
+
+} else if(boolean){
+
+} else [Array.isArray()]{
+   return 'array'
+}
+
+console.log(typeof value)
 
 //CODE ABOVE HERE
 }
+var bool = true
+var func = () => { console.log(true) }
+var array = [1,2,3,4]
+
+_.identity(array)
+_.identity(bool)
+_.identity(func)
 
 /** _.first
 * Arguments:
